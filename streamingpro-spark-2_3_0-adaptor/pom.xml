@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>streamingpro-spark-2.3.0-adaptor</artifactId>
+    <artifactId>streamingpro-spark-2_3_0-adaptor</artifactId>
     <dependencies>
         <dependency>
             <groupId>streaming.king</groupId>

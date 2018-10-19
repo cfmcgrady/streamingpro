@@ -164,7 +164,7 @@
             <dependencies>
                 <dependency>
                     <groupId>streaming.king</groupId>
-                    <artifactId>streamingpro-spark-2.3.0-adaptor</artifactId>
+                    <artifactId>streamingpro-spark-2_3_0-adaptor</artifactId>
                     <version>${project.parent.version}</version>
                 </dependency>
             </dependencies>
@@ -388,6 +388,32 @@
                 <exclusion>
                     <groupId>com.google.code.gson</groupId>
                     <artifactId>gson</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>streaming.king</groupId>
+            <artifactId>streamingpro-dsl</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>streaming.king</groupId>
+            <artifactId>streamingpro-spark-2_3_0-adaptor</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>streaming.king</groupId>
+            <artifactId>streamingpro-crawler</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-hive-thriftserver_${scala.binary.version}</artifactId>
+            <version>${spark.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.eclipse.jetty.aggregate</groupId>
+                    <artifactId>jetty-all</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
